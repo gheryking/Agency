@@ -30,6 +30,10 @@ body {
     color: #fff;
     margin-left: 25px;
 }
+
+/*=========================================================
+# block typed effect and button job
+=========================================================*/
 .block-position {
     width: 80%;
     position: absolute;
@@ -38,4 +42,29 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/*=========================================================
+# Button Job Opportunities (home.html)
+=========================================================*/
+#btn-job {
+    width: 270px;
+    font-size: 22px;
+    border-radius: 30px;
+    margin-bottom: -50px;
+}
+
+/*=========================================================
+# Labels with icon (left side of inputs)
+=========================================================*/
+.side-label {
+    width: 45px;
+}
+
+/*=========================================================
+# Labels with icon (left side of inputs)
+=========================================================*/
+.btn-cancel, .btn-send {
+    width: 65px;
+
 }
