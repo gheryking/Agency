@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+<!-- TITLE PAGE -->
+{% block title %} Opportunities {% endblock title %}
+
+<!-- NAVBAR CONTENT -->
+{% block navbar-content %} 
+    <i class="text-warning fas fa-code"></i> &nbsp;&nbsp; Oportunidades QUE|TA
+{% endblock navbar-content %}
+
+<!-- LINK TO NAVIGATE BETWEEN THE PAGES -->
+{% block link %}
+<a href="{% url 'home' %}" style="margin-right: 25; font-size: 25px;" title="Go back">
+    <i class="text-warning fas fa-angle-double-left">
+
+    </i>
+</a>
+
+{% endblock link %}
+
+
+<!-- PAGE CONTENT -->
+{% block content %}
+    <strong><h1 class="text-center text-danger">Opportunities</h1></strong>
+    <h2>-----> Cuerpo de Opportunities<-----</h2>
+{% endblock content %}

@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% block title %} Home {% endblock title %}
+
+<!-- PAGE CONTENT -->
 {% block content %}
-    <h1>Hola Agency RRHH</h1>
-    <h2>Template con DIRS externos</h2>
+<div class="block-position">
+    <h1 class="text-light">We <span class="text-warning">Typed effect here...</span></h1>
+    <a href="{% url 'opportunities' %}" id="btn-job" class="btn btn-outline-warning border-light mt-4 mt-sm-5">
+        <i class="fas fa-char-pie"></i>&nbsp;&nbsp; Job opportunities
+    </a>
+</div>
 {% endblock content %}
