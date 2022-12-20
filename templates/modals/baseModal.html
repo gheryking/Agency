@@ -6,7 +6,7 @@
                 <h5 class="modal-title" id="defaultModalLabel">{% block modal-title %}<i class="fas fa-code"></i>&nbsp;&nbsp; {% endblock modal-title %}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form method="post" enctype="multipart/form-data" autocomplete="off" action="">
+            <form method="post" {% block validation %}{% endblock validation %} enctype="multipart/form-data" autocomplete="off" action="">
                 {% csrf_token %}
                 <div class="modal-body">
                     
@@ -14,50 +14,50 @@
                         <button class="side-label btn border-secondary bg-light">
                             <i class="fas fa-user-alt"></i>
                         </button>
-                        <input type="text" class="form-control" name="name" placeholder="Full name">
+                        <input type="text" maxlength="50" class="form-control name" {% block id-name %} {% endblock id-name %} name="name" placeholder="Full name">
                     </div>
 
                     <div class="input-group input-group-sm mb-2">
                         <button class="side-label btn border-secondary bg-light">
                             <i class="fas fa-universal-access"></i>
                         </button>
-                        <input type="text" class="form-control" name="age" placeholder="Your Age">
+                        <input type="text" maxlength="2" class="form-control age" {% block id-age %} {% endblock id-age %} name="age" placeholder="Your Age">
                     </div>
                     
                     <div class="input-group input-group-sm mb-2">
                         <button class="side-label btn border-secondary bg-light">
                             <i class="fas fa-envelope"></i>
                         </button>
-                        <input type="text" class="form-control" name="email" placeholder="Your Email">
+                        <input type="text" maxlength="50" required class="form-control email" {% block id-email %} {% endblock id-email %} name="email" placeholder="Your Email">
                     </div>
 
                     <div class="input-group input-group-sm mb-2">
                         <button class="side-label btn border-secondary bg-light">
                             <i class="fas fa-phone"></i>
                         </button>
-                        <input type="text" class="form-control" name="phone" placeholder="Your phone">
+                        <input type="text" class="form-control phone"  {% block id-phone %} {% endblock id-phone %} name="phone" placeholder="Your phone">
                     </div>
 
                     <div class="input-group input-group-sm mb-2">
                         <button class="side-label btn border-secondary bg-light">
                             <i class="fas fa-map-marker-alt"></i>
                         </button>
-                        <input type="text" class="form-control" name="address" placeholder="Your address">
+                        <input type="text" maxlength="100" class="form-control address" {% block id-address %} {% endblock id-address %} name="address" placeholder="Your address">
                     </div>
 
                     <div class="mb-2 mt-3">
-                        <textarea class="form-control" name="experience" rows="3" placeholder="Talk a litle about your experiences."></textarea>
+                        <textarea maxlength="500" class="form-control experience" {% block id-experience %} {% endblock id-experience %}  name="experience" rows="3" placeholder="Talk a litle about your experiences."></textarea>
                     </div>
                     
                     <div class="mb-2 mt-3">
-                        <textarea class="form-control" name="skills" rows="3" placeholder="Talk a litle about you skills."></textarea>
+                        <textarea maxlength="500" class="form-control skills" {% block id-skills %} {% endblock id-skills %} name="skills" rows="3" placeholder="Talk a litle about you skills."></textarea>
                     </div>
 
                     <hr style="height: 2px;">
                     <div class="mb-3">
                         
                         <div class="mb-3" style="font-size: 14px;"><i class="fas fa-cloud-upload-alt"></i>&nbsp;&nbsp; Upload your resume</div>
-                        <input class="form-control form-control-sm" type="file" name="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" >
+                        <input class="form-control form-control-sm" type="file" {% block id-file %} {% endblock id-file %} name="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" >
                         <div class="form-text" style="font-size: 12px;"> * Allowed extensions: pdf - doc - docx</div>
                         
                     </div>
