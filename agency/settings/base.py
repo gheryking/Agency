@@ -2,7 +2,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-print(BASE_DIR)
+#print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -19,6 +19,7 @@ print(BASE_DIR)
 # Application definition
 
 BASE_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,8 +79,8 @@ TEMPLATES = [
     },
 ]
 
-print(str(BASE_DIR) +" "+"templates")
-print(BASE_DIR,'templates/')
+#print(str(BASE_DIR) +" "+"templates")
+#print(BASE_DIR,'templates/')
 
 WSGI_APPLICATION = 'agency.wsgi.application'
 

@@ -12,9 +12,9 @@ urlpatterns = [
     # ===================> SEND EMAILS <===================
     
     #   PATH TO SEND frontTEND FORM
-    path('send_email_frontend', views.email_frontend, name='email_frontend'),
+    path('email_frontend', views.email_frontend, name='email_frontend'),
     #   PATH TO SEND backEND FORM
-    path('send_email_frontend', views.email_backend, name='email_backend'),
+    path('email_backend', views.email_backend, name='email_backend'),
     #   PATH TO SEND fullStack FORM
-    path('send_email_frontend', views.email_fullstack, name='email_fullstack'),
+    path('email_fullstack', views.email_fullstack, name='email_fullstack'),
 ]

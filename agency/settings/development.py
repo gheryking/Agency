@@ -8,7 +8,7 @@ SECRET_KEY = 'Sistemas123'
 DEBUG = True
 
 #TODO -> 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 #TODO ->
 DATABASES = {
@@ -23,5 +23,5 @@ DATABASES = {
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'gerardo.lunarcito@gmail.com'
-EMAIL_HOST_PASSWORD = 'CFGLLunas#2022'
+EMAIL_HOST_PASSWORD = 'juigbjfvogxtqash'
 EMAIL_USE_TLS = True
